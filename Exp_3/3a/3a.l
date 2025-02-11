@@ -19,13 +19,10 @@ int main(int argc, char **argv) {
     }
 
     FILE *file = fopen(argv[1], "r");
-    if (!file) {
-        perror("Error opening file");
-        return 1;
-    }
+    
 
-    yyin = file; // Set input stream for Flex
-    yylex();     // Start lexical analysis
+    yyin = file; 
+    yylex();     
 
     fclose(file);
 
