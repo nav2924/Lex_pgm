@@ -15,16 +15,16 @@ int lineCount = 0;
 %%
 
 int main(int argc, char **argv) {
-    if (argc < 2) {
-        printf("Usage: %s <input_file>\n", argv[0]);
-        return 1;
-    }
+    // if (argc < 2) {
+    //     printf("Usage: %s <input_file>\n", argv[0]);
+    //     return 1;
+    // }
 
     FILE *file = fopen(argv[1], "r");
-    if (!file) {
-        perror("Error opening file");
-        return 1;
-    }
+    // if (!file) {
+    //     perror("Error opening file");
+    //     return 1;
+    // }
 
     yyin = file; // Set input stream for Flex
     yylex();     // Start lexical analysis

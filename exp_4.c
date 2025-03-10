@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>  // Include for exit()
+#include <stdlib.h>  
 
 char string[10];
 int ind = 0;
